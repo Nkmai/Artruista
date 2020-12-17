@@ -14,12 +14,12 @@ import MapCard from './MapCard.jsx';
 
 
 
+
 const libraries = ['places'];
 
 const mapContainerStyle = {
-  // width: '100vw',
   width: '100%',
-  height: '100vh',
+  height: '110vh',
 };
 
 // hardcoding where center of map is, need to go back and get this from geolocation
@@ -71,8 +71,7 @@ export default function Map() {
   return (
     <div>
       {/* <MapSearch panTo={panTo}/> */}
-      <MapGeolocation panTo={panTo} />
-
+      <MapGeolocation panTo={panTo}/>
 
       <GoogleMap 
       mapContainerStyle={mapContainerStyle} 

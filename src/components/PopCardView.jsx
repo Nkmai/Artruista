@@ -56,10 +56,9 @@ const handleClicked = (e) => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <main>
-        <Container className={classes.cardGrid} maxWidth="md">
-          <Grid container>
-              <Grid item xs={12}>
+        <Container className={classes.cardGrid}>
+          <Grid >
+              <Grid item>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -86,7 +85,6 @@ const handleClicked = (e) => {
               </Grid>
           </Grid>
         </Container>
-      </main>
     </React.Fragment>
   );
 }
