@@ -77,9 +77,12 @@ const handleClicked = (e) => {
                       {oneCard.help}
                     </Typography>
                   </CardContent>
-                  <CardActions className={classes.button} onClick={handleClicked}>
-                    <Button size="small" color="primary">
+                  <CardActions className={classes.button} >
+                    <Button size="small" color="primary" onClick={handleClicked}>
                       Home
+                    </Button>
+                    <Button size="small" color="primary">
+                      Connect
                     </Button>
                   </CardActions>
                 </Card>
